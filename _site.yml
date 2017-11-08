@@ -1,9 +1,9 @@
-name: "my-website"
+name: "presentation_R"
 output_dir: "docs"
 navbar:
-  title: "My Website"
+  title: "Présentations logiciel R"
   left:
     - text: "Home"
       href: index.html
-    - text: "About Me"
-      href: about.html
+    - text: "Marc-André Désautels"
+      href: http://madesautels.rbind.io/
