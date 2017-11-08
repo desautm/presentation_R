@@ -2,4 +2,4 @@
 title: "Présentations du logiciel `R`"
 ---
 
-- [Présentation `notebook`](notebook_intro.nb.html)
+- Voici la [présentation `notebook`](notebook_intro.nb.html) présentée au cégep Saint-Jean-sur-Richelieu.

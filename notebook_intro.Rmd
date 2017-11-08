@@ -1,10 +1,11 @@
 ---
 title: "R Notebook"
-author: "Insérez votre nom"
+author: "Marc-André Désautels"
 date: "7 novembre 2017"
 output: 
   html_notebook: 
     toc: yes
+    toc_float: true
 ---
 
 # Introduction
@@ -12,7 +13,6 @@ output:
 Ceci est un document `notebook` en [R Markdown](http://rmarkdown.rstudio.com). Lorsque vous éxécutez du code à l'intérieur du `notebook`, les résultats apparaissent sous le code.
 
 Essayez d'éxécuter le bloc de code ci-dessous en cliquant le bouton *Run* (il est représenté par une flèche verte pointant vers la droite) ou alors en plaçant votre curseur dans le bloc et en tapant *Ctrl+Shift+Enter*.
-
 
 ```{r premier bloc}
 plot(cars)
@@ -29,4 +29,35 @@ Le bloc précédent ne sert qu'à initialiser des librariries que nous pourrons 
 
 # Utilisation des données
 
+Lorsque des données sont intialisées dans `R`, vous pouvez les visualiser avec la commande `View`. De plus, si les données sont des `tibbles` (un type précis de base de données), vous obtenez un résumé des données en tapant le nom.
 
+```{r}
+diamonds
+```
+
+Vous pouvez accéder à une variable en particulier en utilisant l'opérateur `$`. Pour ne pas encombrer l'écran, nous allons observer les 100 premières valeurs de la variable `cut`.
+
+```{r}
+diamonds$cut[1:100]
+```
+
+# Statistiques descriptives
+
+##  Mesures de tendance centrale
+
+Nous pouvons calculer facilement la médiane (`median`) et la moyenne (`mean`) avec `R`.
+
+```{r}
+median(diamonds$carat)
+mean(diamonds$price)
+```
+
+Pour calculer le mode, on peut utiliser la fonction `table` qui regoupe les unités ayant les mêmes modalités ou valeurs ensemble.
+
+```{r}
+table(diamonds$cut)
+```
+
+Le mode est donc *Ideal*.
+
+## Les mesures de dispersion
