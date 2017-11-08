@@ -1,9 +1,17 @@
 name: "presentation_R"
 output_dir: "docs"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    theme: cosmo
+    highlight: tango
+    df_print: paged
 navbar:
   title: "Présentations logiciel R"
   left:
-    - text: "Home"
+    - text: "Présentations"
       href: index.html
     - text: "Marc-André Désautels"
       href: http://madesautels.rbind.io/

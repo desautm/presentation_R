@@ -1,0 +1,32 @@
+---
+title: "R Notebook"
+author: "Insérez votre nom"
+date: "7 novembre 2017"
+output: 
+  html_notebook: 
+    toc: yes
+---
+
+# Introduction
+
+Ceci est un document `notebook` en [R Markdown](http://rmarkdown.rstudio.com). Lorsque vous éxécutez du code à l'intérieur du `notebook`, les résultats apparaissent sous le code.
+
+Essayez d'éxécuter le bloc de code ci-dessous en cliquant le bouton *Run* (il est représenté par une flèche verte pointant vers la droite) ou alors en plaçant votre curseur dans le bloc et en tapant *Ctrl+Shift+Enter*.
+
+
+```{r premier bloc}
+plot(cars)
+```
+
+Pour ajouter un nouveau bloc de code, vous appuyez sur le bouton *Insert* ou alors vous appuyez sur *Ctrl+Alt+I*.
+
+```{r librairies, echo = FALSE}
+library(ggplot2)
+library(nycflights13)
+```
+
+Le bloc précédent ne sert qu'à initialiser des librariries que nous pourrons utiliser plus tard.
+
+# Utilisation des données
+
+
