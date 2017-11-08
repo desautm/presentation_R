@@ -1,2 +1,2 @@
-# presentation_R
-Un site web **très simple** pour présenter les fonctionnalités du logiciel `R`.
+# rmarkdown_website
+Un template pour un RMarkdown Website
